@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTE</title>
+</head>
+<body>
+    <h1>Projecte Final</h1>
+
+    <form id="formulari">,
+        <label>Nom i cognoms:</label>
+        <input type="text" id="nom" />
+
+        <label>Rang d’edats:</label>
+        <select id="edat">
+            <option value="">Selecciona una opció</option>
+            <option value="0-17"> 0-17</option>
+            <option value="18-25">18-25</option>
+            <option value="26-40">26-40</option>
+            <option value="41-55">41-55</option>
+            <option value="56-65">56-65</option>
+            <option value="+65">+65</option>
+        </select>
+
+        <label>Codi postal:</label>
+        <input type="number" id="cp" maxlength="5" placeholder="Introdueix el codi postal"/>
+
+        <label>Correu electrònic:</label>
+        <input type="text" id="email" placeholder="Introdueix el correu electrònic">
+
+         <label>Contrasenya:</label>
+        <input type="password" id="contrasenya"  name="contrasenya" maxlength="8"placeholder="Introdueix la teva contrasenya" />
+        <input type="checkbox" id="mostrarPass"> Mostrar contrasenya
+
+        
+        <label>Confirmar contrasenya:</label>
+        <input type="password" id="contrasenya2" name="contrasenya2" maxlength="8" placeholder="Confirma la teva contrasenya" />
+        <input type="checkbox" id="mostrarPass2"> Mostrar contrasenya
+
+        <label>
+            <input type="checkbox" id="privacitat"> Accepto la política de privacitat
+        </label>
+
+        <button type="button" id="esborrar">Esborrar</button>
+        <button type="button" id="enviar">Enviar</button>
+    </form>
+
+    <p id="mostra"></p>
+    <script src="../PROJECTE/projecte_final.js"></script>
+</body>
+</html>

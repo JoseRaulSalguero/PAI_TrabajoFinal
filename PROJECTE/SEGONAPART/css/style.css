@@ -1,0 +1,40 @@
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: lightgray;
+    padding: 0.5em;
+}
+#carrega {
+    text-align: center;
+}
+#exercicis {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+#exercicis > #menu {
+    width: 25%;
+    background-color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1em;
+}
+#exercicis > #menu > ul {
+    list-style: none;
+    padding-bottom: 1em;
+}
+#exercicis > #menu > ul > li {
+    padding-bottom: 1em;
+}
+#exercicis > #contingut {
+    width: 75%;
+    background-color: lemonchiffon;
+    padding: 1em;
+}
+#opcionsDistricte > input {
+    margin-right: 1em;
+}
