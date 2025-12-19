@@ -1,1 +1,79 @@
-/* Fitxer CSS estudiants */
+#resultats {
+    background-color: #fff8dc;
+    border: 2px solid #f0c36d;
+    padding: 25px;
+    border-radius: 12px;
+    min-height: 150px;
+    font-size: 16px;
+}
+
+/* ===== TÍTOLS DELS EXERCICIS ===== */
+#resultats h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #8a4b00;
+    border-bottom: 2px solid #f0c36d;
+    padding-bottom: 5px;
+}
+
+/* ===== TEXT DESTACAT (RESULTATS NUMÈRICS) ===== */
+#resultats strong {
+    color: #003366;
+    font-size: 18px;
+}
+
+/* ===== PARÀGRAFS DE RESULTAT ===== */
+#resultats p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* ===== LLISTES (EXERCICI 2.3) ===== */
+#resultats ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+#resultats li {
+    margin: 6px 0;
+    font-weight: bold;
+}
+
+/* ===== FORMULARI DEL DISTRICTE (EXERCICI 2.4) ===== */
+#resultats form {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#resultats select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+/* ===== MENÚ LATERAL ===== */
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 12px;
+}
+
+#menu a {
+    display: block;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background-color: #d6d8db;
+}
