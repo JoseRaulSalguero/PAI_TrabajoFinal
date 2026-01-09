@@ -3,50 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECTE</title>
+    <link rel="stylesheet" type="text/css" href="../PROJECTE/projecte_final.css">
+    <title>REGISTRO DE SUPERVIVIENTES - ZONA DE CUARENTENA</title>
 </head>
 <body>
-    <h1>Projecte Final</h1>
-
-    <form id="formulari">,
-        <label>Nom i cognoms:</label>
-        <input type="text" id="nom" />
-
-        <label>Rang d’edats:</label>
-        <select id="edat">
-            <option value="">Selecciona una opció</option>
-            <option value="0-17"> 0-17</option>
-            <option value="18-25">18-25</option>
-            <option value="26-40">26-40</option>
-            <option value="41-55">41-55</option>
-            <option value="56-65">56-65</option>
-            <option value="+65">+65</option>
-        </select>
-
-        <label>Codi postal:</label>
-        <input type="number" id="cp" maxlength="5" placeholder="Introdueix el codi postal"/>
-
-        <label>Correu electrònic:</label>
-        <input type="text" id="email" placeholder="Introdueix el correu electrònic">
-
-         <label>Contrasenya:</label>
-        <input type="password" id="contrasenya"  name="contrasenya" maxlength="8"placeholder="Introdueix la teva contrasenya" />
-        <input type="checkbox" id="mostrarPass"> Mostrar contrasenya
-
-        
-        <label>Confirmar contrasenya:</label>
-        <input type="password" id="contrasenya2" name="contrasenya2" maxlength="8" placeholder="Confirma la teva contrasenya" />
-        <input type="checkbox" id="mostrarPass2"> Mostrar contrasenya
-
-        <label>
-            <input type="checkbox" id="privacitat"> Accepto la política de privacitat
-        </label>
-
-        <button type="button" id="esborrar">Esborrar</button>
-        <button type="button" id="enviar">Enviar</button>
-    </form>
-
-    <p id="mostra"></p>
+    <div class="container">
+        <div class="contacto-info">
+            <img src="../PROJECTE/imatges/natural.png" class="logo" alt="">
+            <h1 class="titulo">
+                ¿Hay alguien ahí fuera?
+            </h1>
+            <p class="presentación">
+                Si estás leyendo esto, es que la señal sigue activa. No sabemos cuánto tiempo aguantarán los repetidores, pero si tienes información, arte que compartir o simplemente buscas un refugio en la red, deja tu mensaje. No estamos solos.
+            </p>
+        </div>
+        <form id="formulari">
+            <div class="form-group">
+                <label for="name">Identificación de Superviviente:</label>
+                <input type="text" id="name" placeholder="Tu Nombre" required>
+                <input type="text" id="lastname" placeholder="Tus Apellidos" required>
+                <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label>Edad del Superviviente:</label>
+                <select id="edat">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0-17"> 0-17</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-40">26-40</option>
+                    <option value="41-55">41-55</option>
+                    <option value="56-65">56-65</option>
+                    <option value="+65">+65</option>
+                </select>
+                <span class="error-msg" id="edat-error"></span>
+            </div>
+             <div class="form-group">
+                <label>Codigo de Districto:</label>
+                <input type="text" id="cp" pattern="[0-9]{5}" maxlength="5" placeholder="00000" required>
+                <span class="error-msg" id="cp-error"></span>
+            </div>
+             <div class="form-group">
+                <label>Canal de Radio:</label>
+                <input type="text" id="email" placeholder="Ultimo.Superviviente@frecuencia.com" required>
+                <span class="error-msg" id="email-error"></span>
+            </div>
+             <div class="form-group">
+                <label>Codigo de Encriptación:</label>
+                <input type="password" id="contrasenya"  name="contrasenya" minlength="8"placeholder="Codigo de Seguridad" required>
+                <input type="checkbox" id="mostrarPass">
+                <span class="error-msg" id="contrasenya-error"></span>
+            </div>
+             <div class="form-group">
+                <label>Verificar Encriptación:</label>
+                <input type="password" id="contrasenya2" name="contrasenya2" minlength="8" placeholder="Repite el Codigo de Seguridad" required>
+                <input type="checkbox" id="mostrarPass2">
+                <span class="error-msg" id="contrasenya2-error"></span>
+            </div>
+            <div class="form-group">
+                <label>Cuenta tu historia:</label>
+                <textarea id="historia" rows="4" placeholder="Escribe tu historia aquí..."></textarea>
+                <span class="error-msg" id="historia-error"></span>
+            </div>
+            <div class="form-terms">
+                <label>
+                <input type="checkbox" id="privacitat">
+                <p>Al contactar con esta frequencia, usted acepta el <a href="#">Protocolo de Confidencialidad</a></p>
+                </label> 
+                <span class="error-msg" id="privacitat-error"></span>
+            </div>  
+            <div class="button_group"></div>                    
+            <button type="reset" id="esborrar">Borrar</button>
+            <button type="submit" id="enviar">Enviar</button>            
+            </div>
+        </form>
+    </div>
     <script src="../PROJECTE/projecte_final.js"></script>
 </body>
 </html>
